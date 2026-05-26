@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Accounting System</title>
+
+    <link rel="stylesheet"
+       href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+
+
+   <style>
+
+          body {
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .card {
+            margin-top: 20px;
+        }
+
+    </style>
+
+</head>
+
+
+
+<body>
+
+<div class="container">
+
+    <h1>Accounting System</h1>
+
+
+
+ <!-- CURRENT STATUS -->
+    <div class="card">
+        <div class="card-body">
+
+            <h3>Current Account Balance</h3>
+            <p>$5000</p>
+
+            <h3>Current Warehouse Stock</h3>
+
+            <ul>
+                <li>Keyboard - 10 pieces</li>
+                <li>Mouse - 15 pieces</li>
+                <li>Monitor - 5 pieces</li>
+            </ul>
+
+        </div>
+    </div>
+
+    <!-- BUTTONS -->
+    <div class="card">
+        <div class="card-body">
+
+            <a href="#purchase" class="btn btn-primary">
+                Purchase Form
+            </a>
+
+            <a href="#sale" class="btn btn-success">
+                Sale Form
+            </a>
+
+            <a href="#balance" class="btn btn-error">
+                Balance Form
+            </a>
+
+            <a href="history.html" class="btn">
+                History
+            </a>
+
+        </div>
+    </div>
+
+    <!-- PURCHASE FORM -->
+    <div class="card" id="purchase">
+
+        <div class="card-header">
+            <div class="card-title h5">
+                Purchase Form
+            </div>
+        </div>
+
+        <div class="card-body">
+
+            <form>
+
+                <div class="form-group">
+                    <label>Product Name</label>
+                    <input class="form-input"
+                           type="text"
+                           placeholder="Enter product name"
+                           required>
+                </div>
+
+                <div class="form-group">
+                    <label>Unit Price</label>
+                    <input class="form-input"
+                           type="number"
+                           placeholder="Enter price"
+                           required>
+                </div>
+
+                <div class="form-group">
+                    <label>Number of Pieces</label>
+                    <input class="form-input"
+                           type="number"
+                           placeholder="Enter quantity"
+                           required>
+                </div>
+
+                <button class="btn btn-primary">
+                    Submit Purchase
+                </button>
+
+            </form>
+
+        </div>
+    </div>
+
+    <!-- SALE FORM -->
+    <div class="card" id="sale">
+
+        <div class="card-header">
+            <div class="card-title h5">
+                Sale Form
+            </div>
+        </div>
+
+        <div class="card-body">
+
+            <form>
+
+                <div class="form-group">
+                    <label>Product Name</label>
+                    <input class="form-input"
+                           type="text"
+                           required>
+                </div>
+
+                <div class="form-group">
+                    <label>Unit Price</label>
+                    <input class="form-input"
+                           type="number"
+                           required>
+                </div>
+
+                <div class="form-group">
+                    <label>Number of Pieces</label>
+                    <input class="form-input"
+                           type="number"
+                           required>
+                </div>
+
+                <button class="btn btn-success">
+                    Submit Sale
+                </button>
+
+            </form>
+
+        </div>
+    </div>
+
+    <!-- BALANCE FORM -->
+    <div class="card" id="balance">
+
+        <div class="card-header">
+            <div class="card-title h5">
+                Balance Change Form
+            </div>
+        </div>
+
+        <div class="card-body">
+
+            <form>
+
+                <div class="form-group">
+
+                    <label>Operation Type</label>
+
+                    <select class="form-select">
+
+                        <option>Add</option>
+                        <option>Subtract</option>
+
+                    </select>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>Amount</label>
+
+                    <input class="form-input"
+                           type="number"
+                           required>
+
+                </div>
+
+                <button class="btn btn-error">
+                    Change Balance
+                </button>
+
+            </form>
+
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
