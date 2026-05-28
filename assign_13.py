@@ -1,7 +1,5 @@
 # --------- Implementing database in Accounting Web Application--------
 
-from sys import float_repr_style
-
 from flask import Flask
 from flask import request
 from flask import redirect
