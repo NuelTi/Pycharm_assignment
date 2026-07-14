@@ -1,7 +1,9 @@
+#------Password_Manager------#
+
 import sqlite3
 from pathlib import Path
 
-from flask import Flask, flash, g, redirect, render_template, request, url_for
+from flask import Flask, redirect, render_template, request
 
 app = Flask(__name__)
 app.secret_key = "change-this-secret-key-in-production"
